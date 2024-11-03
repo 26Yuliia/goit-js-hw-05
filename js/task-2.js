@@ -1,8 +1,6 @@
-const getUsersWithFriend = (users, friendName) =>
-  user.filter(user => user.friendName === name);
-
-const getUsersWithEyeColor = (users, color) =>
-  users.filter(user => user.eyeColor === color);
+const getUsersWithFriend = (users, friendName) => {
+  return users.filter(user => user.friends.includes(friendName));
+};
 
 const allUsers = [
   {
